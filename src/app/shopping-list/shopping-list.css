@@ -1,0 +1,27 @@
+.shopping-list {
+  border: 1px solid;
+  padding: 20px;
+}
+
+.shopping-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.shopping-item span {
+  background-color: #75a3d1;
+  padding: 8px;
+  font-size: 20px;
+  width: 70%;
+}
+
+.delete-button {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}

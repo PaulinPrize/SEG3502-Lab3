@@ -1,12 +1,22 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { ShoppingInput } from './shopping-input/shopping-input';
+import { ShoppingList } from './shopping-list/shopping-list';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  imports: [ShoppingInput, ShoppingList],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('shopping-list');
+
+  items: string[] = [];
+
+  addItem(item: string): void {
+    this.items = [...this.items, item];
+  }
+
+  deleteItem(index: number): void {
+    this.items = this.items.filter((item, i) => i !== index);
+  }
 }

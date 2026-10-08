@@ -1,0 +1,24 @@
+.input-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
